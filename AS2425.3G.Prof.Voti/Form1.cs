@@ -25,5 +25,23 @@ namespace AS2425._3G.Prof.Voti
             // incrementa il numero di voti
             nVoti++;
         }
+
+        private void btnVisualizza_Click(object sender, EventArgs e)
+        {
+            switch (cmbVisualizzazioni.Text.ToUpper())
+            {
+                case "VISUALIZZA VOTI":
+                    lstDettagli.Items.Clear();
+                    for (int i = 0; i < nVoti; i++)
+                    {
+                        lstDettagli.Items.Add($"Voto: {voti[i]} Peso: {pesi[i]} Materia: {materie[i]}");
+                    }
+                    break;
+
+                default:
+                    MessageBox.Show("Scelta non valida");
+                    break;
+            }
+        }
     }
 }

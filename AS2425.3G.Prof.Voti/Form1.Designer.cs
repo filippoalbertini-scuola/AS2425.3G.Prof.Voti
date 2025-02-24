@@ -127,6 +127,7 @@
             // cmbVisualizzazioni
             // 
             cmbVisualizzazioni.FormattingEnabled = true;
+            cmbVisualizzazioni.Items.AddRange(new object[] { "Visualizza voti", "Media ponderata" });
             cmbVisualizzazioni.Location = new Point(78, 180);
             cmbVisualizzazioni.Name = "cmbVisualizzazioni";
             cmbVisualizzazioni.Size = new Size(443, 28);
@@ -140,6 +141,7 @@
             btnVisualizza.TabIndex = 5;
             btnVisualizza.Text = "Visualizza";
             btnVisualizza.UseVisualStyleBackColor = true;
+            btnVisualizza.Click += btnVisualizza_Click;
             // 
             // Form1
             // 

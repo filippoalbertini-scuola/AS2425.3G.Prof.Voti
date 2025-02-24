@@ -114,6 +114,7 @@
             btnAggiungiVoto.TabIndex = 2;
             btnAggiungiVoto.Text = "Aggiungi voto";
             btnAggiungiVoto.UseVisualStyleBackColor = true;
+            btnAggiungiVoto.Click += btnAggiungiVoto_Click;
             // 
             // lstDettagli
             // 

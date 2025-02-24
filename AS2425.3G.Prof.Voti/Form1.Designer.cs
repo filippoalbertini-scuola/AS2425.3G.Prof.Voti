@@ -35,6 +35,7 @@
             label3 = new Label();
             txtMateria = new TextBox();
             groupBox1 = new GroupBox();
+            lblNumeroVoti = new Label();
             btnAggiungiVoto = new Button();
             lstDettagli = new ListBox();
             cmbVisualizzazioni = new ComboBox();
@@ -92,6 +93,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(lblNumeroVoti);
             groupBox1.Controls.Add(btnAggiungiVoto);
             groupBox1.Controls.Add(txtMateria);
             groupBox1.Controls.Add(txtPeso);
@@ -105,6 +107,16 @@
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dati voto";
+            // 
+            // lblNumeroVoti
+            // 
+            lblNumeroVoti.AutoSize = true;
+            lblNumeroVoti.ForeColor = Color.FromArgb(192, 0, 0);
+            lblNumeroVoti.Location = new Point(519, 106);
+            lblNumeroVoti.Name = "lblNumeroVoti";
+            lblNumeroVoti.Size = new Size(42, 20);
+            lblNumeroVoti.TabIndex = 3;
+            lblNumeroVoti.Text = "Voti :";
             // 
             // btnAggiungiVoto
             // 
@@ -172,5 +184,6 @@
         private ListBox lstDettagli;
         private ComboBox cmbVisualizzazioni;
         private Button btnVisualizza;
+        private Label lblNumeroVoti;
     }
 }

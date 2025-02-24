@@ -24,6 +24,9 @@ namespace AS2425._3G.Prof.Voti
 
             // incrementa il numero di voti
             nVoti++;
+
+            // indica il numero di elementi inseriti
+            lblNumeroVoti.Text = $"Voti inseriti: {nVoti}";
         }
 
         private void btnVisualizza_Click(object sender, EventArgs e)
